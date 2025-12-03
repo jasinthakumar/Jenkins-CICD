@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'jasinthakumar/maven-jk-docker-agent:v1'
+      image 'jasinthakumar/project1:v1'
       registryUrl 'https://index.docker.io/v1/'
       registryCredentialsId 'docker-cred'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
